@@ -235,7 +235,7 @@ button.slack-invite:hover {
   }
 }
 
-/* Mobile Regular - iPhone 6, etc. */
+/* iPhone 6 Landscape */
 @media screen and (orientation:landscape) and (min-width: 569px) and (max-width: 667px) {
   #main-page {
     height: 120.5%;
@@ -256,17 +256,20 @@ button.slack-invite:hover {
   }
 }
 
-/* Mobile Regular - iPhone 6, etc. */
+/* iPhone 6 Portrait */
 @media screen and (orientation:portrait) and (min-width: 322px) and (max-width: 375px) {
   #main-page {
     height: 111%; 
   }
   .main-logo {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .half-contain {
     padding: 0;
     padding-bottom: 50px;
+  }
+  h1, h2 {
+    line-height: 1.2;
   }
 }
 
