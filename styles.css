@@ -218,15 +218,16 @@ button.slack-invite:hover {
 /* Mobile Large - iPhone Plus sizes, etc. */
 @media screen and (orientation:landscape) and (min-width: 668px) and (max-width: 737px) {
   #main-page {
-    height: 115%;
+    height: 116%;
   }
   .main-logo {
     margin-top: 10px;
+    width: 90px;
   }
   h1 {
     margin: 0;
     margin-top: -10px;
-    font-size: 55px;
+    font-size: 60px;
   }
   h2 {
     margin-top: 0;
