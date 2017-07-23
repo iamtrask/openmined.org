@@ -320,6 +320,9 @@ button.slack-invite:hover {
 /* Nexus 5 */
 @media screen and (orientation:portrait) and (min-width: 376px) and (max-width: 413px) {
   .main-logo {
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+  #main-page {
+    height: 110%;
   }
 }
