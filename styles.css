@@ -274,7 +274,7 @@ button.slack-invite:hover {
 /* iPhone 6 Portrait */
 @media screen and (orientation:portrait) and (min-width: 322px) and (max-width: 375px) {
   #main-page {
-    height: 111%; 
+    height: 111%;
   }
   .main-logo {
     margin-top: 40px;
@@ -291,7 +291,7 @@ button.slack-invite:hover {
 /* Mobile Small - iPhone 5, etc. */
 @media screen and (max-width: 321px) {
   #main-page {
-    height: 111%; 
+    height: 111%;
   }
   .main-logo {
     margin-top: 30px;
