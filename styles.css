@@ -248,7 +248,8 @@ button.slack-invite:hover {
     margin: 0;
   }
   h2 {
-    margin-top: 10px;
+    margin-top: 0;
+    line-height: 1.2;
   }
   .half-contain {
     padding: 0;
