@@ -302,19 +302,21 @@ button.slack-invite:hover {
 
 @media screen and (orientation:landscape) and (min-width: 321px) and (max-width: 568px) {
   #main-page {
-    height: 122%;
+    height: 124%;
   }
   .main-logo {
-    width: 100px;
+    width: 80px;
     margin-top: 5px;
   }
   h1 {
     margin: 0;
     margin-top: -20px;
+    font-size: 24px;
   }
   h2 {
     margin-top: 0px;
-    line-height: 1.2;
+    line-height: 1;
+    font-size: 18px;
   }
   #part-six {
     height: 20%;
