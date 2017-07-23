@@ -225,7 +225,8 @@ button.slack-invite:hover {
   }
   h1 {
     margin: 0;
-    font-size: 65px;
+    margin-top: -10px;
+    font-size: 55px;
   }
   h2 {
     margin-top: 0;
