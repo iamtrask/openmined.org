@@ -238,7 +238,7 @@ button.slack-invite:hover {
 /* iPhone 6 Landscape */
 @media screen and (orientation:landscape) and (min-width: 569px) and (max-width: 667px) {
   #main-page {
-    height: 120.5%;
+    height: 122%;
   }
   .main-logo {
     width: 120px;
