@@ -160,7 +160,7 @@ var Delaunay;
        * array. */
       st = supertriangle(vertices);
       vertices.push(st[0], st[1], st[2]);
-      
+
       /* Initialize the open list (containing the supertriangle and nothing
        * else) and the closed list (which is empty since we havn't processed
        * any triangles yet). */
@@ -3732,7 +3732,7 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
     LIGHT.currIndex++;
   }
 
-  // Remove lights 
+  // Remove lights
   function trimLights(value) {
     LIGHT.proxy = scene.lights[value];
     for (l = value; l >= scene.lights.length - 1; l--) {
@@ -3841,10 +3841,10 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
   //   controller = lightFolder.add(LIGHT, 'count', 1, 7).listen();
   //   controller.step(1);
   //   controller.onChange(function(value) {
-  //     if (scene.lights.length !== value) { 
+  //     if (scene.lights.length !== value) {
   //       // If the value is more then the number of lights, add lights, otherwise delete lights
   //       if (value > scene.lights.length) {
-  //         addLight(); 
+  //         addLight();
   //       } else {
   //         trimLights(value);
   //       }
@@ -3902,22 +3902,22 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
       LIGHT.xPos = event.x - renderer.width/2;
       LIGHT.yPos = renderer.height/2 -event.y;
       LIGHT.proxy.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.proxy.position[2]);
-    } 
+    }
   }
 
   // Hide the controls completely on pressing H
-  // Mousetrap.bind('H', function() { 
+  // Mousetrap.bind('H', function() {
   //   toggleEl('controls')
   // });
 
   // Add a light on ENTER key
-  // Mousetrap.bind('enter', function() { 
+  // Mousetrap.bind('enter', function() {
   //   LIGHT.count++;
-  //   addLight(); 
+  //   addLight();
   // });
 
   // Pick up the light when a space is pressed
-  // Mousetrap.bind('space', function() { 
+  // Mousetrap.bind('space', function() {
   //   LIGHT.pickedup = !LIGHT.pickedup;
   // });
 

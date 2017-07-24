@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+$tablet-up: 'min-width: 641px';
+
+$monospace-font: 'Source Code Pro', monospace;
+$body-font: 'Karla', sans-serif;
+
+$white: #fff;
+$black: #333;
+$primary: #455c7b;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$anim-time: 0.2s;
+$anim-func: ease-in-out;
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: $body-font;
+  font-weight: $font-normal;
+  background: $white;
+  color: $black;
+  margin: 0px;
+  font-size: 16px;
+}
+
+@keyframes wavyMove {
+  from { background-position: 0px 0px; }
+  to { background-position: 1200px 0px; }
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+  .fork {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 149px;
+    height: 149px;
+  }
+  .header {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 20%;
+    text-align: center;
+    cursor: default;
+    .logo {
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0px auto 40px auto;
+    }
+    h1 {
+      text-transform: lowercase;
+      font-size: 2.5rem;
+      font-family: $monospace-font;
+      color: $white;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      @media (#{$tablet-up}) {
+        font-size: 1.35rem;
+        letter-spacing: 1px;
+      }
+      span {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    background-position: 0px 0px;
+    background-size: 1200px 150px;
+    animation: wavyMove 60s linear infinite;
+    background-image: url('../images/wave.png');
+  }
+}
+
+#sub-section {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  @media (#{$tablet-up}) {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .half {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    @media (#{$tablet-up}) {
+      float: left;
+      width: 50%;
+    }
+    h3 {
+      margin-top: 0px;
+      font-family: $monospace-font;
+    }
+    .button {
+      background: $primary;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      color: $white;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      letter-spacing: 1px;
+      transition: background $anim-time $anim-func;
+      @media (#{$tablet-up}) { margin-top: 20px; }
+      &:hover { background: lighten($primary, 10%); }
+    }
+  }
+}
