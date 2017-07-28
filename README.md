@@ -1,7 +1,10 @@
 # OpenMined.org
 
 ## Getting Started
-Make sure you have NPM installed and run `npm install`.  This should get you the required packages in order to compile SASS.
+- Make sure you have NPM and SASS installed (https://www.npmjs.com/, http://sass-lang.com/guide)
+- run `npm install`
+- run `sass --watch ./` This should get you the required packages in order to compile SASS.
+- open `index.html` in your browser.
 
 ## Contributing
 Create an issue first and discuss all changes publicly.  Follow a standard pull request model for version control.
