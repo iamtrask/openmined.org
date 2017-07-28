@@ -3560,8 +3560,8 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
     xPos : 0,
     yPos : 150,
     zOffset: 100,
-    ambient: '#232E3E',
-    diffuse: '#E9AAB2',
+    ambient: '#06080A',
+    diffuse: '#FFA0C1',
     pickedup :true,
     proxy : false,
     currIndex : 0

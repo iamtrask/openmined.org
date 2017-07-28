@@ -67,6 +67,7 @@ body {
     h2 {
       text-transform: uppercase;
       font-size: 1.1rem;
+      color: #3d2932;
       @media (#{$tablet-up}) {
         font-size: 1.35rem;
         letter-spacing: 1px;
