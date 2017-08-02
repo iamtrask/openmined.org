@@ -15,9 +15,6 @@ var uglify = require('gulp-uglify');
 // HTML
 var htmlmin = require('gulp-htmlmin');
 
-// S3
-var s3 = require('gulp-s3-upload')(JSON.parse(fs.readFileSync('awsaccess.json')));
-
 // Compile all your Sass
 gulp.task('sass', function () {
 	gulp.src(['./*.scss'])
@@ -45,6 +42,8 @@ gulp.task('htmlMinify', function() {
 
 // Upload to S3
 gulp.task('upload', function() {
+	var s3 = require('gulp-s3-upload')(JSON.parse(fs.readFileSync('awsaccess.json')));
+	
 	gulp.src('./dist/**')
 		.pipe(s3({
 			Bucket: 'openmined.org',
