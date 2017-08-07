@@ -3761,6 +3761,7 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
   function addEventListeners() {
     window.addEventListener('resize', onWindowResize);
     container.addEventListener('mousemove', onMouseMove);
+    container.addEventListener('mouseleave', mouseleave);
   }
 
   // function addControls() {
@@ -3897,13 +3898,42 @@ dat.GUI = dat.gui.GUI = function(e, a, c, d, f, b, n, h, j, m, l, o, y, g, i) {
     render();
   }
 
-  function onMouseMove(event) {
-    if(LIGHT.pickedup){
-      LIGHT.xPos = event.x - renderer.width/2;
-      LIGHT.yPos = renderer.height/2 -event.y;
-      LIGHT.proxy.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.proxy.position[2]);
+    function onMouseMove(event) {
+        if(LIGHT.pickedup){
+            goBack = false;
+
+            LIGHT.xPos = event.x - renderer.width/2;
+            LIGHT.yPos = renderer.height/2 -event.y;
+            LIGHT.proxy.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.proxy.position[2]);
+
+            x = LIGHT.xPos;
+            y = LIGHT.yPos;
+        }
     }
-  }
+
+
+    function mouseleave(event) {
+        goBack = true;
+    }
+
+
+    var goBack = false;
+    var x =  100
+    var y =  150
+
+
+    setInterval(function(){
+        if(goBack) {
+            if (x < 100)
+                x = x + 1;
+            if (x > 100)
+                x = x - 1;
+            if (y < 150)
+                y = y + 1;
+            if (y > 150)
+                y = y - 1;
+            LIGHT.proxy.setPosition(x, y, LIGHT.proxy.position[2]);
+        }}, 1);
 
   // Hide the controls completely on pressing H
   // Mousetrap.bind('H', function() {
