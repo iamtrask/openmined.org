@@ -12,7 +12,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #4a90e2;
   border-width: 3px;
   max-width: 50px;
 }
@@ -24,13 +24,18 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: black;
+  z-index: 100;
+}
+
+blueBackground{
+  color: white;
 }
 
 
 
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #4a90e2;
 }
 h1,
 h2,
@@ -47,6 +52,7 @@ h1{
 }
 
 
+
 #OpenMinedLogo{
   width : 80%;
   height : auto;
@@ -57,24 +63,8 @@ h1{
   margin-left: auto;
   margin-right: auto;
   display: block;
-
-
 }
 
-#particles-js{
-
-  /*
-
-  filter: blur(7px);
-  -webkit-filter: blur(7px);
-  -moz-filter: blur(7px);
-  -o-filter: blur(7px);
-  -ms-filter: blur(7px);
-
-*/
-
-
-}
 
 
 
@@ -84,7 +74,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #4a90e2;
 }
 .bg-dark {
   background-color: #222222;
@@ -111,14 +101,14 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #4a90e2;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
+  color: #4a90e2;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -135,11 +125,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #4a90e2;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #4a90e2 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -171,12 +161,12 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #4a90e2;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #4a90e2;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -184,7 +174,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #4a90e2;
   }
 }
 header {
@@ -274,7 +264,7 @@ header .header-content .header-content-inner p {
   color: black;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: #4a90e2;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -322,7 +312,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: #4a90e2;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -379,7 +369,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: white;
   background-color: #6C6D6E;
-  border-color: #F05F40;
+  border-color: #4a90e2;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -390,9 +380,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: black;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  color: white;
+  background-color: #4a90e2;
+  border-color: #4a90e2;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -417,11 +407,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #4a90e2;
+  border-color: #4a90e2;
 }
 .btn-primary .badge {
-  color: #F05F40;
+  color: #4a90e2;
   background-color: white;
 }
 .btn {
