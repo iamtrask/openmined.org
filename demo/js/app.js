@@ -1,17 +1,6 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-
-
-/* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
+
 
     {
         "particles": {
@@ -63,13 +52,13 @@ particlesJS('particles-js',
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#000000",
+                "color": "#2d2d2d",
                 "opacity": 0.4,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 1,
+                "speed": 2,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -86,11 +75,11 @@ particlesJS('particles-js',
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "repulse"
                 },
                 "onclick": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "push"
                 },
                 "resize": true
@@ -123,5 +112,9 @@ particlesJS('particles-js',
         },
         "retina_detect": true
     }
+
+
+
+
 
 );
