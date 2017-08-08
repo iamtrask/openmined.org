@@ -42,20 +42,38 @@ h6 {
   color: black;
 }
 
+h1{
+  font-size: 50px;
+}
+
 
 #OpenMinedLogo{
-  width : 60%;
+  width : 80%;
   height : auto;
   z-index: 999;
+  align-content: center;
+
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+
 }
 
 #particles-js{
+
+  /*
 
   filter: blur(7px);
   -webkit-filter: blur(7px);
   -moz-filter: blur(7px);
   -o-filter: blur(7px);
   -ms-filter: blur(7px);
+
+*/
+
+
 }
 
 
@@ -70,10 +88,10 @@ p {
 }
 .bg-dark {
   background-color: #222222;
-  color: white;
+  color: black;
 }
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 section {
   padding: 100px 0;
@@ -85,7 +103,7 @@ aside {
   padding: 0;
 }
 .navbar-default {
-  background-color: white;
+  background-color: black;
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -138,7 +156,7 @@ aside {
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: white;
+    color: black;
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
@@ -146,7 +164,7 @@ aside {
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: white;
+    color: black;
   }
   .navbar-default.affix {
     background-color: white;
@@ -180,7 +198,7 @@ header {
   background-position: center;
 
   text-align: center;
-  color: white;
+  color: black;
 }
 header .header-content {
   position: relative;
@@ -200,7 +218,7 @@ header .header-content .header-content-inner hr {
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
   font-size: 16px;
   margin-bottom: 50px;
 }
@@ -253,7 +271,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
-  color: white;
+  color: black;
   opacity: 0;
   display: block;
   background: rgba(240, 95, 64, 0.9);
@@ -355,12 +373,12 @@ fieldset[disabled] .btn-default.active {
   border-color: white;
 }
 .btn-default .badge {
-  color: white;
+  color: black;
   background-color: #222222;
 }
 .btn-primary {
   color: white;
-  background-color: #F05F40;
+  background-color: #6C6D6E;
   border-color: #F05F40;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -372,7 +390,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: white;
+  color: black;
   background-color: #ee4b28;
   border-color: #ed431f;
 }
@@ -417,21 +435,21 @@ fieldset[disabled] .btn-primary.active {
   padding: 15px 30px;
 }
 ::-moz-selection {
-  color: white;
+  color: black;
   text-shadow: none;
   background: #222222;
 }
 ::selection {
-  color: white;
+  color: black;
   text-shadow: none;
   background: #222222;
 }
 img::selection {
-  color: white;
+  color: black;
   background: transparent;
 }
 img::-moz-selection {
-  color: white;
+  color: black;
   background: transparent;
 }
 body {

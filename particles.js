@@ -1509,6 +1509,11 @@ window.particlesJS = function(tag_id, params){
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
 
+    canvas_el.style.filter = "blur(5px)";
+
+
+
+
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);
 
