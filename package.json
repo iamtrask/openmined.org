@@ -1,29 +1,28 @@
 {
-  "name": "openmined.org",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "particles.js",
+  "version": "2.0.0",
+  "description": "A lightweight JavaScript library for creating particles",
+  "homepage": "http://vincentgarreau.com/particles.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenMined/openmined.org.git"
+    "url": "https://github.com/VincentGarreau/particles.js.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "particles",
+    "particle",
+    "canvas"
+  ],
+  "author": "Vincent Garreau",
+  "license": "MIT",
+  "files": [
+    "particles.js",
+    "particles.min.js"
+  ],
   "bugs": {
-    "url": "https://github.com/OpenMined/openmined.org/issues"
+    "url": "https://github.com/VincentGarreau/particles.js/issues"
   },
-  "homepage": "https://github.com/OpenMined/openmined.org#readme",
-  "devDependencies": {
-    "fs": "0.0.1-security",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-s3-upload": "^1.6.6",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
-  }
+  "homepage": "https://github.com/VincentGarreau/particles.js"
 }
