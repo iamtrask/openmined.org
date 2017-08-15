@@ -2,18 +2,18 @@
 
 $tablet-up: 'min-width: 641px';
 
-$monospace-font: 'Source Code Pro', monospace;
-$body-font: 'Karla', sans-serif;
+$monospace-font: 'PT Mono', monospace;
+$body-font: 'Overpass', sans-serif;
 
 $white: #fff;
 $black: #333;
-$primary: #455c7b;
+$true-black: #000;
+$teal: #5CB5A4;
+$lime: #9BCC9A;
+$primary-gradient: linear-gradient(to bottom right, $teal, $lime);
+$primary-gradient-hover: linear-gradient(to bottom right, lighten($teal, 10%), lighten($lime, 10%));
 
 $font-normal: 400;
-$font-bold: 700;
-
-$anim-time: 0.2s;
-$anim-func: ease-in-out;
 
 * { box-sizing: border-box; }
 
@@ -34,8 +34,10 @@ body {
 #container {
   position: relative;
   width: 100%;
-  height: 640px;
+  height: 720px;
   overflow: hidden;
+  background-image: url('./images/gradient-mesh.svg');
+  background-size: cover;
   .fork {
     position: absolute;
     top: 0px;
@@ -48,26 +50,27 @@ body {
     width: 80%;
     height: 60%;
     left: 10%;
-    top: 20%;
     text-align: center;
     cursor: default;
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 550px;
+      height: 550px;
       display: block;
-      margin: 0px auto 40px auto;
+      margin: 0 auto 0 auto;
     }
     h1 {
       font-size: 2.5rem;
       font-family: $monospace-font;
       color: $white;
-      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 0px 10px rgba($true-black, 0.25);
     }
     h2 {
       text-transform: uppercase;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      color: rgba($white, 0.85);
+      margin: -140px auto 0px auto;
       @media (#{$tablet-up}) {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
       }
       span {
@@ -110,18 +113,16 @@ body {
       font-family: $monospace-font;
     }
     .button {
-      background: $primary;
+      background: $primary-gradient;
       text-decoration: none;
       padding: 15px 20px;
       display: inline-block;
       color: $white;
-      border-radius: 10px;
+      border-radius: 5px;
       text-transform: uppercase;
-      font-weight: $font-bold;
       letter-spacing: 1px;
-      transition: background $anim-time $anim-func;
       @media (#{$tablet-up}) { margin-top: 20px; }
-      &:hover { background: lighten($primary, 10%); }
+      &:hover { background: $primary-gradient-hover; }
     }
   }
 }
