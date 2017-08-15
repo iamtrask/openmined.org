@@ -53,10 +53,13 @@ body {
     text-align: center;
     cursor: default;
     .logo {
-      width: 550px;
-      height: 550px;
       display: block;
-      margin: 0 auto 0 auto;
+      width: 220px;
+      margin: 160px auto 0px auto;
+      @media (#{$tablet-up}) {
+        width: 360px;
+        margin: 140px auto 0px auto;
+      }
     }
     h1 {
       font-size: 2.5rem;
@@ -66,13 +69,11 @@ body {
     }
     h2 {
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
       color: rgba($white, 0.85);
-      margin: -140px auto 0px auto;
-      @media (#{$tablet-up}) {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-      }
+      margin: 20px auto 0px auto;
+      @media (#{$tablet-up}) { font-size: 1.2rem; }
       span {
         display: block;
         margin-bottom: 5px;
