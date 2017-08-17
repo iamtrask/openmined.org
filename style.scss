@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 $tablet-up: 'min-width: 641px';
+$gradient-break: 'min-width: 1255px';
 
 $monospace-font: 'PT Mono', monospace;
 $body-font: 'Overpass', sans-serif;
@@ -34,10 +35,17 @@ body {
 #container {
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 535px;
   overflow: hidden;
   background-image: url('./images/gradient-mesh.svg');
   background-size: cover;
+  @media (#{$gradient-break}) {
+    background-position-y: -150px;
+  }
+  @media (#{$tablet-up}) {
+    height: 720px;
+  }
+
   .fork {
     position: absolute;
     top: 0px;
@@ -55,10 +63,9 @@ body {
     .logo {
       display: block;
       width: 220px;
-      margin: 160px auto 0px auto;
+      margin: 140px auto 0px auto;
       @media (#{$tablet-up}) {
-        width: 360px;
-        margin: 140px auto 0px auto;
+        width: 420px;
       }
     }
     h1 {
@@ -72,7 +79,7 @@ body {
       font-size: 1rem;
       letter-spacing: 1px;
       color: rgba($white, 0.85);
-      margin: 20px auto 0px auto;
+      margin: 10px auto 0px auto;
       @media (#{$tablet-up}) { font-size: 1.2rem; }
       span {
         display: block;
