@@ -15,9 +15,12 @@ var uglify = require('gulp-uglify');
 // HTML
 var htmlmin = require('gulp-htmlmin');
 
+// Cleaner
+var clean = require('gulp-clean');
+
 // Compile all your Sass
 gulp.task('sass', function () {
-	gulp.src(['./*.scss'])
+	return gulp.src(['./*.scss'])
 		.pipe(sass({
 			includePaths: ['./'],
 			outputStyle: 'expanded'
@@ -28,14 +31,14 @@ gulp.task('sass', function () {
 
 // Uglify JS
 gulp.task('uglify', function() {
-	gulp.src(['./*.js', '!./gulpfile.js'])
+	return gulp.src(['./*.js', '!./gulpfile.js'])
 		.pipe(uglify())
 		.pipe(gulp.dest('dist'));
 });
 
 // HTML Minification
 gulp.task('htmlMinify', function() {
-  gulp.src('./*.html')
+  return gulp.src('./*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'));
 });
@@ -43,13 +46,30 @@ gulp.task('htmlMinify', function() {
 // Upload to S3
 gulp.task('upload', function() {
 	var s3 = require('gulp-s3-upload')(JSON.parse(fs.readFileSync('awsaccess.json')));
-	
-	gulp.src('./dist/**')
+
+	return gulp.src('./dist/**')
 		.pipe(s3({
 			Bucket: 'openmined.org',
 			ACL: 'public-read'
 		}, { maxRetries: 5 }));
 });
+
+// Clear out dist
+gulp.task('clean', function () {
+  return gulp.src('dist', { read: false }).pipe(clean());
+});
+
+// Copy CSS
+gulp.task('copy-sass', function() {
+	return gulp.src(['./*.css'])
+		.pipe(minifycss())
+		.pipe(gulp.dest('dist'));
+});
+
+// Copy images
+gulp.task('copy-images', function() {
+	return gulp.src(['images/*']).pipe(gulp.dest('dist/images'));
+})
 
 gulp.task('default', function() {
 	// Watch me getting Sassy
@@ -58,21 +78,6 @@ gulp.task('default', function() {
 	});
 });
 
-gulp.task('deploy', function() {
-	// Run SASS compilation
-	gulp.run('sass');
-
-	// Copy all CSS files
-	gulp.src(['./*.css'])
-		.pipe(minifycss())
-		.pipe(gulp.dest('dist'));
-
-	// Uglify JS and HTML
-	gulp.run('uglify');
-	gulp.run('htmlMinify');
-
-	// Copy images
-	gulp.src(['images/*']).pipe(gulp.dest('dist/images'));
-
+gulp.task('deploy', ['clean', 'sass', 'copy-sass', 'uglify', 'htmlMinify', 'copy-images'], function() {
 	gulp.run('upload');
 })
