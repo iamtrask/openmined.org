@@ -1,0 +1,74 @@
+
+ls
+# Other Temp Files
+*.*~
+*.ipynb
+#config files
+mail_config.py
+config.py
+### Python ###
+*.sqlite3
+static_root/
+# Byte-compiled / optimized / DLL files
+thread.py
+__pycache__/
+*.py[cod]
+# C extensions
+*.so
+# Distribution / packaging
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+.tox/
+.coverage
+.ipynb_checkpoints/
+XaudioTests.ipynb
+.cache
+nosetests.xml
+coverage.xml
+# Translations
+*.mo
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+# Rope
+.ropeproject
+# Django stuff:
+*.log
+*.pot
+*.csv
+.staticfiles/
+.media/
+# Sphinx documentation
+docs/_build/
+# npm
+node_modules/
+# Campass
+.sass-cache
+# Celery
+celerybeat-schedule
+# Vagrant
+.vagrant
+# python-dotenv
+.env
+# Know Your Representative
+_docs_html/
+media/
+
+# Virtual env
+venv/
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+# Pycharm project modules
+.idea/
+static_root/

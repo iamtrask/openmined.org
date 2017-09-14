@@ -3,3 +3,5 @@
 /dist
 awsaccess.json
 style.css
+./openminedsite/static_root/
+*.sqlite3

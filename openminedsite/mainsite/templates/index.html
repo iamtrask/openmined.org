@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>OpenMined</title>
+
+		<link href="{% static 'images/favicon.png' %}" rel="shortcut icon">
+		<link href="https://fonts.googleapis.com/css?family=Overpass|PT+Mono" rel="stylesheet">
+		<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-103957829-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<a href="https://github.com/OpenMined" target="_blank">
+				<img class="fork" src="https://raw.githubusercontent.com/aral/fork-me-on-github-retina-ribbons/master/images/fork-me-right-white%402x.png" alt="Fork me on GitHub">
+			</a>
+			<div class="header">
+		  	<img src="{% static 'images/logo-white.svg' %}" class="logo" alt="OpenMined">
+		  	<h2><span>Encrypted, Decentralized</span>Artificial Intelligence</h2>
+		  </div>
+			<div class="wave"></div>
+		</div>
+		<div id="sub-section">
+			<div class="half">
+				<h3>Join Our Slack Community</h3>
+				<a href="https://join.slack.com/t/openmined/shared_invite/MjI5MjcwOTk5NjUzLTE1MDMyNTY2MTQtM2RlMmIxNmM5Ng" target="_blank" class="button">Collaborate</a>
+			</div>
+			<div class="half">
+				<h3>Join Our Mailing List</h3>
+				<a href="http://eepurl.com/cW1Fqj" target="_blank" class="button">Get Updates</a>
+			</div>
+			<div class="half">
+				<h3>Team Map</h3>
+				<a href="/team-map/team_map" target="_blank" class="button">Know Our Team</a>
+			</div>
+		</div>
+	</body>
+</html>
