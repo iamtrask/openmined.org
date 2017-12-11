@@ -1,5 +1,9 @@
 # OpenMined.org
 
+❗
+This library has been deprecated due to changes in strategy and roadmap. To actively contribute based on our current roadmap, checkout [the new website](https://github.com/OpenMined/openmined-website) or [join our slack](https://openmined.slack.com/)
+---
+
 ## Getting Started
 - Make sure you have NPM (https://www.npmjs.com/) and SASS (http://sass-lang.com/guide) installed.
 - Run `npm install` to install all the dependencies.
